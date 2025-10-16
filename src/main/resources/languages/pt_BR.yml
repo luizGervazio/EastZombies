@@ -1,0 +1,48 @@
+main:
+  prefix: '&2[EastZombies] &r'
+  zombies_team_name: 'Zumbis'
+commands:
+  help: |-
+    &7Ajuda:&r
+    &f- &2/ez remove <nome>&f: Remove um jogador da lista de zumbis.
+    &f- &2/ez start&f: Inicia o evento.
+    &f- &2/ez reload&f: Recarrega a configuração.
+    &f- &2/ez status&f: Verifica o status dos buffs/debuffs.
+    O dia zero será definido, a lista de zumbis será limpa, e todos os buffs e debuffs serão reativados.
+  reload:
+    success: '&aArquivo de configuração recarregado com sucesso.'
+  remove:
+    zombie_not_found: '&cEste zumbi não existe.'
+  errors:
+    restricted_command: '&cZumbis não podem usar este comando.'
+    no_permission: '&cVocê não tem permissão para usar este comando.'
+    invalid_subcommand: '&cSubcomando inválido. Disponíveis: %s.'
+    too_few_arguments: '&cArgumentos insuficientes. Digite /ez para ajuda.'
+    too_many_arguments: '&cMuitos argumentos. Digite /ez para ajuda.'
+    invalid_argument: '&cArgumento inválido. Disponíveis: %s.'
+buffs:
+  broadcast:
+    no_target: '&aMobs hostis não atacam mais zumbis.'
+    flesh_no_hunger: '&aCarne podre não causa mais fome.'
+    hunger_attack: '&aAtaques de zumbis agora infligem fome em humanos.'
+    zombie_compass: |-
+      &aZumbis agora podem criar uma bússola zumbi.
+      &7Coloque quatro diamantes nos cantos, carne podre na esquerda e direita, olhos de aranha em cima e embaixo, e uma bússola no centro.
+  zombie_compass:
+    name: '&2Bússola Zumbi'
+    lore: '&7Rastreia a última localização do jogador mais próximo.'
+    cooldown: '&cVocê precisa esperar %s segundos antes de usar a bússola novamente.'
+    tracked: '&aA bússola agora aponta para a localização onde &f%s&a estava recentemente (%sm).'
+    no_result: '&cNenhum jogador próximo encontrado.'
+debuffs:
+  broadcast:
+    sun_burn: '&cZumbis agora queimam na luz solar.'
+    golems: '&cGolems de ferro agora atacam zumbis.'
+broadcasts:
+  player_turned_zombie: '&f%s &ase transformou em um zumbi!'
+  day: '&aDia %s'
+  border_shrink: 'A borda do mundo encolherá %s blocos em %s segundos.'
+voicechat:
+  errors:
+    wrong_group: "&cVocê só pode estar no grupo do seu time."
+    creation_blocked: "&cVocê não pode criar novos grupos."
